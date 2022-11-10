@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
+import Button from '../components/Button'
 
 const TestScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text>Test Screen</Text>
-            <Text onPress={() => navigation.navigate('Home')}>Go To Home</Text>
+            <Button onPress={() => navigation.navigate('Home')}>Go To Home</Button>
         </View>
     )
 }
